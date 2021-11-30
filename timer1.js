@@ -19,9 +19,9 @@ for (let i = 0; i < numArr.length; i++) {
     // If an array item is a valid number, send an alert at that specified number in seconds after function is called.
     setTimeout(() => {
       process.stdout.write(`beep @ ${numArr[i]} seconds!   `);
-    }, numArr[i]*1000);
+    }, numArr[i] * 1000);
   }
 }
 
 // print new line 1 second after the last alert is made
-setTimeout(() => process.stdout.write('\n'), (numArr[numArr.length-1]*1000 + 1000));
+setTimeout(() => process.stdout.write('\n'), (numArr[numArr.length - 1] * 1000 + 1000));
